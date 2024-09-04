@@ -1,0 +1,11 @@
+{
+  "author": "Najmus Sakib",
+  "scripts": {
+    "build": "tailwindcss -i ./src/input.css -o ./assets/css/screen.min.css -w --minify"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.19",
+    "postcss": "^8.4.39",
+    "tailwindcss": "^3.4.3"
+  }
+}

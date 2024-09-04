@@ -1,0 +1,95 @@
+@font-face {
+  font-family: "MADE Canvas";
+  src: url("/assets\fonts\MADECanvas-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "MADE Canvas";
+  src: url("/assets/fonts/MADECanvas-Light.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "MADE Canvas";
+  src: url("/assets/fonts/MADECanvas.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,500;0,600;0,700;0,800;0,900;1,500&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.holder {
+  @apply max-w-[1390px] m-auto px-8 md:px-11;
+}
+
+@layer base {
+  body {
+    @apply flex flex-col min-h-screen  font-normal text-black;
+  }
+
+  h2 {
+    @apply text-32 md:text-5xl lg:text-7xl font-bold leading-[119%];
+  }
+
+  h3 {
+    @apply text-32 font-bold leading-[100%];
+  }
+
+  p,
+  ul,
+  ol {
+    @apply text-18 leading-7 font-normal text-justify;
+  }
+
+  .block-pad {
+    @apply py-8 md:py-12;
+  }
+
+  .hover-effect {
+    @apply relative after:content-[''] after:block after:w-0 after:absolute after:h-[1px] after:bg-white after:[transition:width_.3s] after:hover:w-full after:hover:bg-white after:right-0 after:[left:initial] hover:after:[right:initial] hover:after:left-0;
+  }
+}
+
+.toggleNav i {
+  @apply transition-all duration-500 ease-in-out;
+}
+.toggleNav i:nth-child(1) {
+  @apply translate-x-[13px];
+}
+body.nav-expanded .toggleNav i:nth-child(1) {
+  @apply rotate-[225deg] top-[9px] w-full translate-x-0;
+}
+
+body.nav-expanded .toggleNav i:nth-child(2) {
+  @apply opacity-0;
+}
+
+body.nav-expanded .toggleNav i:nth-child(3) {
+  @apply -rotate-[225deg] -top-[7px] w-full;
+}
+body.nav-expanded aside {
+  @apply left-0;
+}
+section {
+  @apply transition-all duration-500;
+}
+
+body.nav-expanded section {
+  @apply md:ml-[360px] overflow-hidden;
+}
+
+input:checked ~ .dot {
+  transform: translateX(100%);
+  background-color: #576665;
+}
