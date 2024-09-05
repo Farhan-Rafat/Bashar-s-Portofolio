@@ -107,3 +107,11 @@ input:checked ~ .dot {
 .dark .star a.active svg path {
   fill: #ffd700;
 }
+
+.btn {
+  @apply bg-white border border-black dark:border-white py-4 px-6 inline-flex items-center gap-6 uppercase text-sm font-normal tracking-[0.035rem] leading-none hover:text-white hover:bg-black dark:hover:bg-white dark:hover:text-red-400 transition-all duration-500 dark:text-white dark:bg-black;
+}
+
+.btn:hover > svg > path {
+  @apply fill-white transition-all duration-500;
+}
