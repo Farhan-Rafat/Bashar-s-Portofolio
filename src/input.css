@@ -93,3 +93,14 @@ input:checked ~ .dot {
   transform: translateX(100%);
   background-color: #576665;
 }
+
+/* Testimonial slider css */
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  content: "";
+}
+
+.star a.active svg path {
+  fill: #000; /* Color for active stars (e.g., gold) */
+}
