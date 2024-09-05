@@ -102,5 +102,8 @@ input:checked ~ .dot {
 }
 
 .star a.active svg path {
-  fill: #000; /* Color for active stars (e.g., gold) */
+  fill: #000;
+}
+.dark .star a.active svg path {
+  fill: #ffd700;
 }
