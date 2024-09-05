@@ -1,6 +1,6 @@
 @font-face {
   font-family: "MADE Canvas";
-  src: url("./assets/fonts/MADECanvas-Black.ttf") format("truetype");
+  src: url("/assets/fonts/MADECanvas-Black.ttf") format("truetype");
   font-weight: 900;
   font-style: normal;
   font-display: swap;
@@ -8,7 +8,7 @@
 
 @font-face {
   font-family: "MADE Canvas";
-  src: url("./assets/fonts/MADECanvas-Light.ttf") format("truetype");
+  src: url("/assets/fonts/MADECanvas-Light.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -16,7 +16,7 @@
 
 @font-face {
   font-family: "MADE Canvas";
-  src: url("./assets/fonts/MADECanvas.ttf") format("truetype");
+  src: url("/assets/fonts/MADECanvas.ttf") format("truetype");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
