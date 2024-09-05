@@ -24,7 +24,7 @@ ehthumbs.db
 !assets/
 !src
 !index.html
-!sami.html
+!about.html
 !package-lock.json
 !package.json
 !postcss.config.js
