@@ -6,7 +6,6 @@
     <title>Bashar - Product designer</title>
 
     <script src="./assets/js/jquery.js"></script>
-    <script src="./assets/js/scrollreveal.js"></script>
     <link rel="stylesheet" href="./assets/css/screen.min.css" />
   </head>
   <body class="dark:bg-black">
@@ -157,7 +156,9 @@
       </aside>
     </header>
 
-    <section class="relative min-h-[calc(100vh-117px)] flex items-center">
+    <section
+      class="relative min-h-[calc(100vh-117px)] flex items-center overflow-hidden"
+    >
       <div class="holder">
         <div
           class="absolute top-2/4 right-1/4 -translate-y-2/4 translate-x-1/4 -z-10 max-w-[500px]"
@@ -183,7 +184,7 @@
           </svg>
         </div>
 
-        <div class="lg:max-w-[65%] xl:max-w-[70%]">
+        <div class="lg:max-w-[65%] xl:max-w-[70%]" data-scroll="">
           <h2
             class="title font-madeCanvas font-light text-olivelight text-center dark:text-grey"
           >
@@ -373,7 +374,8 @@
         </div>
 
         <div
-          class="human absolute bottom-0 right-[15%] translate-x-[15%] hidden lg:block lg:max-w-[30%] xl:max-w-[25%]"
+          class="human absolute bottom-0 right-[10%] translate-x-[10%] hidden lg:block lg:max-w-[30%] xl:max-w-[24%]"
+          data-scroll=""
         >
           <img src="./assets/images/bashar.svg" alt="Bashar" />
 

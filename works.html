@@ -6,7 +6,6 @@
     <title>Bashar - Product designer</title>
 
     <script src="./assets/js/jquery.js"></script>
-    <script src="./assets/js/scrollreveal.js"></script>
     <link rel="stylesheet" href="./assets/css/screen.min.css" />
   </head>
   <body class="dark:bg-black">
@@ -157,7 +156,7 @@
       </aside>
     </header>
 
-    <section class="relative min-h-[calc(100vh-117px)] pb-32">
+    <section class="relative min-h-[calc(100vh-117px)] pb-32 overflow-hidden">
       <div class="holder">
         <div class="absolute top-0 right-5 md:right-9 -z-10 max-w-[630px]">
           <svg
@@ -181,7 +180,7 @@
           </svg>
         </div>
 
-        <div class="space-y-6">
+        <div class="space-y-6" data-scroll="">
           <h2 class="title font-madeCanvas font-light dark:text-grey">Works</h2>
 
           <h1
@@ -200,7 +199,7 @@
           </p>
 
           <!-- grid gallery Wrapper -->
-          <div class="grid md:grid-cols-2 gap-x-9 gap-y-30">
+          <div class="grid md:grid-cols-2 gap-x-9 gap-y-30" data-scroll="">
             <a href="#" class="card group overflow-hidden shadow-xl">
               <img
                 class="w-full object-cover group-hover:scale-110 duration-500"

@@ -33,17 +33,18 @@ $(window).on("load", function () {
   }, 2000);
 });
 
-// scroll reveal jQuery code
+// scroll reveal javaScript code
 
-ScrollReveal({
-  reset: true,
-  distance: "60px",
-  duration: 2500,
-  delay: 100,
-});
+const scrollers = document.querySelectorAll("[data-scroll]");
 
-ScrollReveal().reveal(".title", { delay: 100, origin: "left" });
-ScrollReveal().reveal(".human", { delay: 100, origin: "right" });
-ScrollReveal().reveal(".text", { delay: 300, origin: "bottom" });
-ScrollReveal().reveal(".card, .icons", { delay: 50 });
-ScrollReveal().reveal(".reveal", { delay: 50 });
+function check(entries) {
+  entries.map((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("in-view");
+      observer.unobserve(entry.target);
+    }
+  });
+}
+
+const observer = new IntersectionObserver(check);
+scrollers.forEach((scroller) => observer.observe(scroller));

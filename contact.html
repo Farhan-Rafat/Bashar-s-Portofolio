@@ -6,7 +6,6 @@
     <title>Bashar - Product designer</title>
 
     <script src="./assets/js/jquery.js"></script>
-    <script src="./assets/js/scrollreveal.js"></script>
     <link rel="stylesheet" href="./assets/css/screen.min.css" />
   </head>
   <body class="dark:bg-black">
@@ -157,8 +156,10 @@
       </aside>
     </header>
 
-    <section class="relative min-h-[calc(100vh-117px)] flex items-center pb-10">
-      <div class="holder">
+    <section
+      class="relative min-h-[calc(100vh-117px)] flex items-center pb-10 overflow-hidden"
+    >
+      <div class="holder" data-scroll="">
         <h1
           class="title text-5xl md:text-8xl lg:text-[132px] font-madeCanvas font-bold dark:text-grey"
         >
@@ -172,7 +173,7 @@
           porttitor feugiat pretium
         </p>
 
-        <form class="card w-full space-y-7 mt-11">
+        <form class="form w-full space-y-7 mt-11">
           <div class="flex flex-wrap gap-6">
             <div class="w-full md:w-[49%]">
               <input

@@ -122,3 +122,69 @@ input:checked ~ .dot {
 .loading #preloader {
   @apply block;
 }
+
+/* Scroll Reveal CSS */
+
+.title {
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: all 1.5s ease;
+}
+.in-view .title {
+  opacity: 1;
+  transform: translateX(0);
+}
+.text {
+  opacity: 0;
+  transform: translateX(100%);
+  transition: all 1.5s ease;
+}
+.in-view .text {
+  opacity: 1;
+  transform: translateX(0);
+}
+.icons {
+  opacity: 0;
+  transform: translateY(100%);
+  transition: all 1.5s ease;
+}
+.in-view .icons {
+  opacity: 1;
+  transform: translateY(0);
+}
+.swiper-slide {
+  opacity: 0;
+  transform: translateY(100%);
+  transition: all 1.5s ease;
+}
+.in-view .swiper-slide {
+  opacity: 1;
+  transform: translateY(0);
+}
+.form {
+  opacity: 0;
+  transform: translateY(100%);
+  transition: all 1.5s ease;
+}
+.in-view .form {
+  opacity: 1;
+  transform: translateY(0);
+}
+.card {
+  opacity: 0;
+  transform: translateY(100%);
+  transition: all 1.5s ease;
+}
+.in-view .card {
+  opacity: 1;
+  transform: translateY(0);
+}
+.human {
+  opacity: 0;
+  transform: translateY(100%);
+  transition: all 1.5s ease;
+}
+.in-view.human {
+  opacity: 1;
+  transform: translateY(0);
+}
