@@ -32,3 +32,18 @@ $(window).on("load", function () {
     $("html").removeClass("loading").addClass("loaded");
   }, 2000);
 });
+
+// scroll reveal jQuery code
+
+ScrollReveal({
+  reset: true,
+  distance: "60px",
+  duration: 2500,
+  delay: 100,
+});
+
+ScrollReveal().reveal(".title", { delay: 100, origin: "left" });
+ScrollReveal().reveal(".human", { delay: 100, origin: "right" });
+ScrollReveal().reveal(".text", { delay: 300, origin: "bottom" });
+ScrollReveal().reveal(".card, .icons", { delay: 50 });
+ScrollReveal().reveal(".reveal", { delay: 50 });
