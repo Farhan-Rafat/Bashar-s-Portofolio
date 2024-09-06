@@ -12,6 +12,7 @@ document
   .querySelector("input[type='checkbox']#dark-toggle")
   .addEventListener("click", darkModeListener);
 
+// ratings javaScript code
 var stars = document.querySelectorAll(".star a");
 
 stars.forEach((item, index1) => {
@@ -22,4 +23,12 @@ stars.forEach((item, index1) => {
         : star.classList.remove("active");
     });
   });
+});
+
+// Preloader jQuery code
+
+$(window).on("load", function () {
+  setTimeout(function () {
+    $("html").removeClass("loading").addClass("loaded");
+  }, 2000);
 });

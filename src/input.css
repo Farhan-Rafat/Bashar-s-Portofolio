@@ -115,3 +115,10 @@ input:checked ~ .dot {
 .btn:hover > svg > path {
   @apply fill-white transition-all duration-500;
 }
+
+.loaded #preloader {
+  @apply hidden;
+}
+.loading #preloader {
+  @apply block;
+}
