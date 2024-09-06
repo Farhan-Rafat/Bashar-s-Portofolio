@@ -8,6 +8,12 @@
     <link rel="stylesheet" href="./assets/css/screen.min.css" />
   </head>
   <body class="dark:bg-black">
+    <div
+      id="preloader"
+      class="w-full h-screen bg-[#000] z-50 bg-no-repeat bg-center"
+      style="background-image: url(./assets/images/loading.gif)"
+    ></div>
+
     <header class="p-10 sticky top-0 left-0 z-10">
       <div class="flex items-center justify-between relative z-50">
         <div class="h-[19px]">
@@ -208,5 +214,13 @@
     </section>
 
     <script src="./assets/js/functions.js"></script>
+
+    <script>
+      var loader = document.getElementById("preloader");
+
+      window.addEventListener("load", function () {
+        loader.style.display = "none";
+      });
+    </script>
   </body>
 </html>
