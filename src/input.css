@@ -86,7 +86,7 @@ section {
 }
 
 body.nav-expanded section {
-  @apply md:ml-[360px] overflow-hidden;
+  @apply lg:ml-[360px] overflow-hidden;
 }
 
 input:checked ~ .dot {
